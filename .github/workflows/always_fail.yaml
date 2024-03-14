@@ -1,0 +1,10 @@
+name: Fail Every Commit
+
+on: [push]
+
+jobs:
+  fail_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fail Command
+        run: exit 1
